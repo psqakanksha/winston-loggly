@@ -1,0 +1,10 @@
+sudo: false
+language: node_js
+node_js:
+  - "6"
+
+before_install:
+  - travis_retry npm install
+  - npm install winston-loggly-bulk
+script:
+  - npm test

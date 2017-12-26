@@ -28,6 +28,6 @@
     "vows": "0.8.0"
   },
   "main": "./lib/winston-loggly",
-  "scripts": { "test": "vows --spec" },
+  "scripts": { "test": "node test/winston-test1.js" },
   "engines": { "node": ">= 0.8.0" }
 }
