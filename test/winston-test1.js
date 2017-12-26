@@ -1,5 +1,5 @@
 const winston = require('winston');
-var winlog = require('winston-loggly-bulk');
+var winlog = require('..');
 
 var loggly = new winston.transports.Loggly({
     token: "53beea74-c135-4683-b876-1e7dad32bbaf",
