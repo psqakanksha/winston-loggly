@@ -25,7 +25,7 @@ var source = {
 
 
 
-for (i = 0; i < 750; i++) {
+for (i = 0; i < 10; i++) {
     winston.log('info',source);
     winston.log('info', 'The Docker logging driver allows you send stdout and stderr output from your container to the host’s syslog daemon. The syslog daemon on the host will then forward the logs to Loggly. For alternatives, please see the Advanced Options section below.');
     winston.log('info', 'The Docker logging driver allows you send stdout and stderr output from your container to the host’s syslog daemon. The syslog daemon on the host will then forward the logs to Loggly. For alternatives, please see the Advanced Options section below.');
@@ -48,7 +48,7 @@ winston.log('info', null);
 winston.log('info', source);
 
 
-
+/*
 setInterval(function () {
     sendMultipleLogs();
 }, 5 * 1000);
@@ -59,4 +59,4 @@ function sendMultipleLogs() {
         winston.log('info', 'cry me a river :(');
     }
 }
-
+*/
