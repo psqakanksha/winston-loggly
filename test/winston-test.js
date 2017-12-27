@@ -51,7 +51,7 @@ winston.log('info', null);
 winston.log('info', source);
 
 
-/*
+
 setInterval(function () {
     sendMultipleLogs();
 }, 5 * 1000);
@@ -62,4 +62,4 @@ function sendMultipleLogs() {
         winston.log('info', 'cry me a river :(');
     }
 }
-*/
+

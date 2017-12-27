@@ -11,3 +11,7 @@ before_install:
 
 script:
   - npm test
+
+after_script:
+  - node -e "setTimeout(null,10000)";
+  - exit(0)
