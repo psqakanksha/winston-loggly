@@ -14,6 +14,7 @@ winston.add(winston.transports.Loggly, {
     },
 });
 
+//Sending a single event both text and json object
 var source = {
     foo: 1,
     bar: 2,
@@ -23,8 +24,10 @@ var source = {
     }
 };
 
+winston.log('info', 'The Docker logging driver allows you send stdout and stderr output from your container to the host’s syslog daemon.')
 
 
+//Sending multiple events in a loop
 for (i = 0; i < 10; i++) {
     winston.log('info',source);
     winston.log('info', 'The Docker logging driver allows you send stdout and stderr output from your container to the host’s syslog daemon. The syslog daemon on the host will then forward the logs to Loggly. For alternatives, please see the Advanced Options section below.');
@@ -32,7 +35,7 @@ for (i = 0; i < 10; i++) {
     winston.log('info', source); 
 }
 
-
+//Test logging an exception
 try {
     var a = 10, b = 0;
     a = a / b;
@@ -42,7 +45,7 @@ try {
     winston.error(e);
 }
 
-
+//Sending null or empty message
 winston.log('info', '');
 winston.log('info', null);
 winston.log('info', source);
