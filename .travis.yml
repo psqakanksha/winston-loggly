@@ -9,9 +9,7 @@ before_install:
   - travis_retry npm install
   - pwd
 
+
 script:
   - npm test
-  - node -e "setTimeout(null,10000)";
 
-after_script:
-  - exit(0)
