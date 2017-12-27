@@ -62,21 +62,9 @@ var repeater = setInterval(function () {
 
 function sendMultipleLogs() {
     for (i = 0; i < 54; i++) {
-        //winston.log('info', source);
-        winston.log('info', 'cry me a river :(');
-    }
-}
-
-/*
-setInterval(function () {
-    sendMultipleLogs();
-}, 5 * 1000);
-
-function sendMultipleLogs() {
-    for (i = 0; i < 50; i++) {
         winston.log('info', source);
         winston.log('info', 'cry me a river :(');
     }
 }
-*/
+
 
