@@ -50,10 +50,10 @@ winston.log('info', '');
 winston.log('info', null);
 winston.log('info', source);
 
-
+//Sending multiple events in a loop in each 5 seconds (Continue logging)
 var callCount = 1;
 var repeater = setInterval(function () {
-    if (callCount < 10) {
+    if (callCount < 10) {           // Limit the function for executing only 10 times
         sendMultipleLogs();
         callCount += 1;
     }
@@ -68,3 +68,21 @@ function sendMultipleLogs() {
 }
 
 
+// Test when json field is set to false
+winston.add(winston.transports.Loggly, {
+    token: "53beea74-c135-4683-b876-1e7dad32bbaf",
+    subdomain: "labenv4",
+    json: true,
+});
+
+
+var text = {
+    faa: 'Hey',
+    bar: 'Bye',
+    buzz: {
+        bear: 'jumped',
+        times: 10
+    }
+};
+
+winston.log('info',source)
