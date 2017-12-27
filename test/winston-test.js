@@ -51,6 +51,22 @@ winston.log('info', null);
 winston.log('info', source);
 
 
+var callCount = 1;
+var repeater = setInterval(function () {
+    if (callCount < 10) {
+        sendMultipleLogs();
+        callCount += 1;
+    }
+    else clearInterval(repeater);
+    }, 5 * 1000);
+
+function sendMultipleLogs() {
+    for (i = 0; i < 54; i++) {
+        //winston.log('info', source);
+        winston.log('info', 'cry me a river :(');
+    }
+}
+
 /*
 setInterval(function () {
     sendMultipleLogs();
