@@ -29,8 +29,7 @@
   },
   "main": "./lib/winston-loggly",
   "scripts": {
-    "test": "node test/winston-test.js",
-    "test": "node test/winston-test-bulk.js"
+    "test": "node test/winston-test.js"
   },
   "engines": {
     "node": ">= 0.8.0"
