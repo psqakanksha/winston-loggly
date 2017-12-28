@@ -30,7 +30,7 @@
   "main": "./lib/winston-loggly",
   "scripts": {
     "test": "node test/winston-test.js",
-            "node test/winston-test-bulk.js"
+    "bulk-test": "node test/winston-test-bulk.js"
   },
   "engines": {
     "node": ">= 0.8.0"
