@@ -26,7 +26,7 @@ var source = {
     }
 };
 
-winston.log('info', 'The Docker logging driver allows you send stdout and stderr output from your container to the host’s syslog daemon.')
+winston.log('info', 'The test is the bulk mode for winston library')
 winston.log('info', source);
 
 //Sending multiple events in a loop
@@ -51,7 +51,6 @@ try {
 
 //Sending multiple events in a loop in each 5 seconds (Continue logging)
 var callCount = 1
-
 var repeater = setInterval(function () {
     if (callCount < 10) {
     sendMultipleLogs();
