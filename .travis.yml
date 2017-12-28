@@ -12,4 +12,4 @@ before_install:
 
 script:
   - npm test
-  - npm bulk-test
+  - npm bulk
