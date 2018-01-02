@@ -67,12 +67,13 @@ function sendMultipleLogs() {
     }
 }
 
-/*
+
 // Test when json field is set to false
 winston.add(winston.transports.Loggly, {
     token: "53beea74-c135-4683-b876-1e7dad32bbaf",
     subdomain: "labenv4",
-    json: true,
+    json: false,
+    tags: ["winston-json-false"],
 });
 
 
@@ -85,5 +86,5 @@ var text = {
     }
 };
 
-winston.log('info',source)
-*/
+winston.log('info', text)
+
