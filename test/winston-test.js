@@ -4,7 +4,7 @@ require('..');
 winston.add(winston.transports.Loggly, {
     token: "53beea74-c135-4683-b876-1e7dad32bbaf",
     subdomain: "labenv4",
-    tags: ["Winston-bulk-8.9.1-everything"],
+    tags: ["Winston-input-mode-everything"],
     json: true,
     isBulk: false,
     bufferOptions: {
