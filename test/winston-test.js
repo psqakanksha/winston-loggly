@@ -67,7 +67,7 @@ function sendMultipleLogs() {
     }
 }
 
-
+/*
 // Test when json field is set to false
 winston.add(winston.transports.Loggly, {
     token: "53beea74-c135-4683-b876-1e7dad32bbaf",
@@ -87,4 +87,4 @@ var text = {
 };
 
 winston.log('info', text)
-
+*/
